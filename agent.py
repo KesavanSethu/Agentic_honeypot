@@ -27,11 +27,13 @@ STALLING = [
     "Battery low, I’ll reply",
 ]
 
-def agent_reply(message, history, scam, session_id):
+def agent_reply(message, history, scam):
     if not scam:
         return "Okay, thanks for letting me know."
 
     extracted = extract_intel(message)
+    session_id = history[0][0] if history else "default"
+
     state = get_state(session_id)
 
     if extracted["upi"] or extracted["bank_accounts"]:
@@ -40,6 +42,8 @@ def agent_reply(message, history, scam, session_id):
         state = "cooperative"
     elif len(history) > 6:
         state = "stalling"
+    else:
+        state = "confused"
 
     set_state(session_id, state)
 

@@ -1,0 +1,21 @@
+{
+  "total_sessions": 1,
+  "total_messages": 1,
+  "scam_sessions": 1,
+  "total_engagement_time": 0.5,
+  "extraction_counts": {},
+  "conversation_lengths": [
+    1
+  ],
+  "session_metrics": {
+    "tc6": {
+      "is_scam": true,
+      "extractions": {},
+      "message_count": 1,
+      "engagement_duration": 0.5,
+      "timestamp": "2026-01-30T09:37:28.385059"
+    }
+  },
+  "start_time": "2026-01-30T09:35:48.450196",
+  "last_update": "2026-01-30T09:37:28.385059"
+}

@@ -1,0 +1,93 @@
+{
+  "test_session_0": {
+    "history": [
+      {
+        "user": "Send \u20b91000 to 1234567890@ybl",
+        "bot": "Thanks for the message. How can I help?",
+        "timestamp": "2026-01-30T09:22:13.687527",
+        "scam": false,
+        "extracted": {}
+      }
+    ],
+    "state": "initial",
+    "created": "2026-01-30T09:22:13.710640",
+    "metrics": {},
+    "last_updated": "2026-01-30T09:22:13.710640",
+    "turn_count": 1
+  },
+  "tc3": {
+    "history": [
+      {
+        "user": "Call this number now 9876543210 to stop the block",
+        "bot": "Thanks for teh message. How can I help?",
+        "timestamp": "2026-01-30T09:23:34.691466",
+        "scam": false,
+        "extracted": {}
+      }
+    ],
+    "state": "initial",
+    "created": "2026-01-30T09:23:34.710818",
+    "metrics": {},
+    "last_updated": "2026-01-30T09:23:34.710818",
+    "turn_count": 1
+  },
+  "test_session_1": {
+    "history": [
+      {
+        "user": "Your account will be blocked in 2 hours. Send \u20b91 to verify@okicici to reactivate.",
+        "bot": "Thanks for the message. How can I help?",
+        "timestamp": "2026-01-30T09:27:13.702118",
+        "scam": false,
+        "extracted": {}
+      },
+      {
+        "user": "hi",
+        "bot": "Thanks for your message. I'll look into it.",
+        "timestamp": "2026-01-30T09:28:56.751512",
+        "scam": false,
+        "extracted": {}
+      },
+      {
+        "user": "hi",
+        "bot": "Thanks for your message. I'll look into it.",
+        "timestamp": "2026-01-30T09:29:00.368588",
+        "scam": false,
+        "extracted": {}
+      },
+      {
+        "user": "hi",
+        "bot": "Thanks for your message. I'll look into it.",
+        "timestamp": "2026-01-30T09:29:01.633454",
+        "scam": false,
+        "extracted": {}
+      }
+    ],
+    "state": "initial",
+    "created": "2026-01-30T09:27:13.728030",
+    "metrics": {},
+    "last_updated": "2026-01-30T09:29:01.633454",
+    "turn_count": 4
+  },
+  "8769": {
+    "history": [],
+    "state": "confused"
+  },
+  "tc6": {
+    "history": [
+      {
+        "user": "FINAL WARNING!!! RESPOND NOW",
+        "bot": "Thanks for the message. How can I help?",
+        "timestamp": "2026-01-30T09:37:28.277784",
+        "scam": true,
+        "extracted": {}
+      }
+    ],
+    "state": "initial",
+    "created": "2026-01-30T09:37:28.310292",
+    "metrics": {
+      "scam_turns": 1
+    },
+    "last_updated": "2026-01-30T09:37:28.310292",
+    "turn_count": 1
+  }
+}

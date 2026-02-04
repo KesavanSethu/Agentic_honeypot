@@ -36,8 +36,12 @@ def chat(req: Message):
     reply = agent_reply(req.message, history, scam)
 
     # 3) Extract + VALIDATE intelligence
-    raw_extracted = extract_intel(req.message)
-    extracted = validate_extractions(raw_extracted)
+    if scam:
+        raw_extracted = extract_intel(req.message)
+        extracted = validate_extractions(raw_extracted)
+    else:
+        extracted = {}
+
 
     # 4) PRIORITY RULE: phones beat bank accounts (CRITICAL)
     if extracted.get("phones"):

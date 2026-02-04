@@ -20,7 +20,7 @@ def is_scam(text: str) -> bool:
     if re.search(r"(?:\+91[\s\-]?)?[6-9]\d{9}", t):
         return True
 
-    if re.search(r"\b\d{9,18}\b", t):
+    if re.search(r"\b\d{9,18}\b", t) and any(word in t for word in ["transfer", "send", "pay", "deposit", "account"]):
         return True
 
     return False
